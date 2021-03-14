@@ -1,0 +1,29 @@
+.form_complete .confirm {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* ---------- */
+  height: 100%;
+}
+
+.confirm-window {
+  width: 300px;
+}
+
+li {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.key {
+  flex: 1 0 20%;
+}
+
+.value {
+  flex: 1 0 40%;
+}
+
+button {
+  margin-left: auto;
+}

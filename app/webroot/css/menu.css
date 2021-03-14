@@ -1,0 +1,39 @@
+.menu ul {
+  position: relative;
+  /* ---------- */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* ---------- */
+  height: 100%;
+}
+
+.menu ul::before {
+  content: 'メニュー';
+  /* ---------- */
+  position: absolute;
+  top: 0;
+  /* ---------- */
+  display: block;
+  /* ---------- */
+  padding: 20px 0;
+  width: 100%;
+  /* ---------- */
+  color: var(--gray);
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+li {
+  font-size: 22px;
+}
+
+li a:hover {
+  color: #496d83;
+}
+
+li:first-child {
+  margin-bottom: 40px;
+}

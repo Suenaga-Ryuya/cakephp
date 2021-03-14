@@ -232,13 +232,15 @@
 
 /**
  * A random string used in security hashing methods.
+ * 値を変更する必要(セキュリティの面から)
  */
-	Configure::write('Security.salt', 'DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi');
+	Configure::write('Security.salt', 'NW6uJhRyW4VLtFdxF3kDFih1Bh0DR0Q3m7kFuBBz');
 
 /**
  * A random numeric string (digits only) used to encrypt/decrypt strings.
+ *　値を変更する必要(セキュリティの面から)
  */
-	Configure::write('Security.cipherSeed', '76859309657453542496749683645');
+	Configure::write('Security.cipherSeed', '960024426745198917339097294351');
 
 /**
  * Apply timestamps with the last modified time to static assets (js, css, images).
@@ -278,7 +280,7 @@
  * Uncomment this line and correct your server timezone to fix
  * any date & time related errors.
  */
-	//date_default_timezone_set('UTC');
+	date_default_timezone_set('Asia/Tokyo');
 
 /**
  * `Config.timezone` is available in which you can set users' timezone string.

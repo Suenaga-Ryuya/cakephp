@@ -1,0 +1,51 @@
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* ---------- */
+  height: 100%;
+}
+
+.store-form,
+.update-form {
+  width: 300px;
+}
+
+.memberId,
+.text,
+.gender {
+  display: flex;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+.text label,
+.gender label,
+.key {
+  flex: 1 0 20%;
+}
+
+.text input {
+  padding: var(--pad);
+  flex: 0 0 auto;
+}
+
+.gender .input,
+.value {
+  flex: 1 0 40%;
+}
+
+.gender .input label {
+  margin-right: 25%;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn button[value="store"],
+.btn button[value="edit"] {
+  margin-right: 10px;
+}

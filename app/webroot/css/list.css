@@ -1,0 +1,78 @@
+.actionContainer.list {
+  height: 550px;
+  margin-top: -60px;
+  width: 80%;
+  padding: 30px;
+}
+
+.controllers {
+  border-bottom: 10px solid rgb(88, 88, 88);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.controllers p {
+  margin-bottom: 10px;
+}
+
+.search {
+  display: flex;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.text label {
+  margin-right: 20px;
+}
+
+.text input {
+  padding: var(--pad);
+}
+
+a[href="/cakephp/"] {
+  margin-left: auto;
+}
+
+.member-list {
+  overflow-y: auto;
+  height: 400px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+th {
+  border: 2px solid gray;
+  padding: 10px;
+  width: 200px;
+  text-align: left;
+}
+
+thead th {
+  background-color: #ececec;
+}
+
+.gender {
+  width: 100px;
+}
+
+.options {
+  width: 250px;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-evenly;
+}

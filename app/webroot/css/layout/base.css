@@ -1,0 +1,109 @@
+/* 
+* 画面の共通スタイルの設定
+* default.ctp
+*/
+@charset "utf-8";
+
+:root {
+  /* 配色設定 */
+  --lavender_ice: #f7f6fb;
+  --black: #323233;
+  --gray: #646466;
+  --lightgray: #979699;
+  --palegray: #ebebee;
+
+  --pad: 5px 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--lavender_ice);
+  font-family: 'Sawarabi Gothic', sans-serif;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #00294b;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  /* ---------- */
+  height: 50px;
+  margin-bottom: 125px;
+  padding: 0 20px;
+  width: 100%;
+  /* ---------- */
+  background-color: #00294b;
+}
+
+.header > span {
+  font-weight: bold;
+  color: #fff;
+}
+
+.actionContainer {
+  height: 400px;
+  margin: 0 auto;
+  width: 550px;
+}
+
+.containerTitle {
+  padding: 20px 0;
+  /* ---------- */
+  background-color: #ececec;
+  border-bottom: 1px solid lightgray;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+}
+
+button,
+.button {
+  display: block;
+  /* ---------- */
+  padding: var(--pad);
+  width: 75px;
+  /* ---------- */
+  background-color: #285e9b;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+
+.button {
+  text-align: center;
+  text-decoration: none;
+  font-size: .83rem;
+}
+
+button:hover,
+.button:hover {
+  background-color: #227db1;
+}
+
+.warning {
+  color: #f00;
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: .8rem;
+}
+
+.success {
+  color: #f00;
+}
+
+.error-message {
+  display: none;
+}

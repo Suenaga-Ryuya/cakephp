@@ -19,13 +19,33 @@
  * @since         CakePHP(tm) v 0.2.9
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
- 
+
 /**
  * Here, we are connecting '/' (base path) to controller called 'Pages',
  * its action called 'display', and we pass a param to select the view file
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
-	Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
+
+	// ログイン
+	Router::connect('/login', array('controller' => 'Users', 'action' => 'login'));
+	Router::connect('/logout', array('controller' => 'Users', 'action' => 'logout'));
+
+	// メニュー
+	Router::connect('/', array('controller' => 'Users', 'action' => 'menu'));
+
+	// 一覧
+	Router::connect('/list', array('controller' => 'Users', 'action' => 'list'));
+
+	// 登録
+	Router::connect('/store', array('controller' => 'Users', 'action' => 'store'));
+	Router::connect('/storeComplete', array('controller' => 'Users', 'action' => 'storeComplete'));
+
+	// 更新
+	Router::connect('/edit', array('controller' => 'Users', 'action' => 'edit'));
+	Router::connect('/updateComplete', array('controller' => 'Users', 'action' => 'updateComplete'));
+
+	// 削除
+	Router::connect('/delete', array('controller' => 'Users', 'action' => 'delete'));
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */
